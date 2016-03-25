@@ -31,14 +31,14 @@ class PostsNew extends Component {
             {title.touched ? title.error : ''}
           </div>
         </div>
-        <div className={`form-group ${categories.touched && title.invalid ? 'has-danger' : ''}`}>
+        <div className={`form-group ${categories.touched && categories.invalid ? 'has-danger' : ''}`}>
           <label>Categories</label>
           <input type="text" className="form-control" {...categories} />
           <div className="text-help">
             {categories.touched ? categories.error : ''}
           </div>
         </div>
-        <div className={`form-group ${content.touched && title.invalid ? 'has-danger' : ''}`}>
+        <div className={`form-group ${content.touched && content.invalid ? 'has-danger' : ''}`}>
           <label>Content</label>
           <textarea type="text" className="form-control" {...content} />
           <div className="text-help">
